@@ -6,10 +6,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <Fragment>
       <Head>
-      <link 
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" 
-            rel="stylesheet" 
-          />
+      
         <title>Accredian</title>
         <meta
           name="viewport"

@@ -43,7 +43,7 @@ module.exports = {
       spacing: {},
       fontFamily: {
         "homeaccrediancom-roboto-bold-17": "Roboto",
-        sans: ['Roboto', 'sans-serif'],
+      
         inter: "Inter",
         "source-sans-pro": "'Source Sans Pro'",
       },

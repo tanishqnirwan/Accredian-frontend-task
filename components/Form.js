@@ -45,7 +45,7 @@ const ReferralForm = () => {
 
       <Modal
         title={<h2 className="text-2xl font-bold text-blue-600">Referral Form</h2>}
-        visible={isModalVisible}
+        open={isModalVisible}
         onCancel={handleCloseModal}
         footer={null}
         width={600}
