@@ -16,12 +16,12 @@ To preview and run the project on your local device, follow these steps:
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/your-username/your-repo.git
+    git clone https://github.com/your-username/your-repo.git](https://github.com/tanishqnirwan/Accredian-frontend-task.git)
     ```
 
 2. **Navigate to the project folder**:
     ```bash
-    cd your-repo
+    cd Accredian-frontend-task
     ```
 
 3. **Install dependencies**:
