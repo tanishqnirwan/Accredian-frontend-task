@@ -1,9 +1,9 @@
 import Navbar from "../components/Navbar";
 import Tabs from "../components/Tabs";
-import InfoBanner from "../components/infobanner";
+import InfoBanner from "../components/InfoBanner";
 import Refer_Sec from "../components/Refer";
 import Faq from "../components/Faq";
-import Footer from "../components/footer";
+import Footer from "../components/Footer";
 
 const ReferEarnPage = () => {
   return (
