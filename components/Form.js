@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Modal, Form, Input, Button, notification } from 'antd';
 import axios from 'axios';
 
+const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || 'https://accredian-backend-task-yjtc.onrender.com';
+
 const ReferralForm = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -17,13 +19,16 @@ const ReferralForm = () => {
   const handleSubmit = async (values) => {
     setLoading(true);
     try {
-      await axios.post('http://localhost:3000/referral', values);
+  
+      await axios.post(`https://accredian-backend-task-9wki.onrender.com/referral`, values);
       notification.success({
         message: 'Referral Submitted',
         description: 'Your referral has been successfully submitted!',
       });
-      handleCloseModal(); // Close the modal after successful submission
+      handleCloseModal();
     } catch (error) {
+      console.error('Submission error:', error);
+      console.error('Error details:', error.response?.data);
       notification.error({
         message: 'Submission Failed',
         description: 'There was an error submitting your referral.',
